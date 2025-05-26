@@ -1,0 +1,342 @@
+/* TITRE ADMIN */
+.admin-title {
+    font-family: 'Rammetto One', sans-serif;
+    position: absolute;
+    left: 600px;
+    top: 30px;
+    font-size: 30px;
+    color: #0B3164;
+}
+
+/* INFO ADMIN */
+.admin-info {
+    display: flex;
+    align-items: center;
+    color: #3c405d;
+    margin: 4px 0 4px 0;
+    position: relative;
+}
+
+.admin-info strong {
+    width: 150px;
+    display: flex;
+    position: relative;
+    margin-left: 470px;
+}
+
+
+
+
+
+.no-users {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #888;
+    font-style: italic;
+}
+
+
+
+
+
+
+/* FORMULAIRE - CHAMPS ÉDITION */
+.utilisateur-item input {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 190px;
+    background-color: #e1eaf4;
+    transition: border-color 0.3s;
+    outline: none;
+    margin: 0 20px;
+    color: #000;
+}
+
+.utilisateur-item input:focus {
+    border-color: #1976d2;
+}
+
+.search-input {
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 90%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #eff7fa;
+    color: #000;
+}
+
+.email-input {
+
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+/* BOUTONS */
+.btn-accept,
+.btn-reject,
+.btn-modify,
+.btn-delete {
+    border: none;
+    border-radius: 4px;
+    padding: 6px 20px;
+    cursor: pointer;
+    color: white;
+}
+
+btn-accept,
+.btn-reject {
+    border: none;
+    border-radius: 4px;
+    padding: 5px 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-accept {
+    background-color: #4caf50;
+
+}
+
+.btn-accept:hover {
+    background-color: #43a047;
+    transform: scale(1.05);
+}
+
+.btn-reject {
+    background-color: #f44336;
+
+}
+
+.btn-reject:hover {
+    background-color: #e53935;
+    transform: scale(1.05);
+}
+
+.btn-modify {
+    background-color: #ff9800;
+    margin-left: 20px;
+}
+
+.btn-modify:hover {
+    background-color: #ff9800;
+    transform: scale(1.05);
+}
+
+.btn-delete {
+    background-color: #d32f2f;
+}
+
+.btn-delete:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+/* BOÎTE BLANCHE PRINCIPALE */
+.white-box55 {
+    position: relative;
+    background-color: #ffffff;
+    padding: 100px;
+    height: 502px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 1248px;
+    max-width: 100%;
+}
+
+/* SÉLECTEUR DE RÔLE */
+.role-select {
+    padding: 6px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    max-width: 150px;
+    height: 40px;
+    color: #000;
+    border: 1px solid #ccc;
+    background-color: #e1eaf4;
+}
+
+/* INPUT AUTO-WIDTH */
+.auto-width {
+    min-width: 100px;
+    font-family: inherit;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+
+/* ONGLET TABLEAU */
+.table-tabs {
+    display: flex;
+    background-color: #888f9d;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+
+.table-tab:hover {
+    background-color: #102c72;
+}
+
+.table-tab {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-right: 1px solid white;
+    transition: background-color 0.3s;
+}
+
+.table-tab:last-child {
+    border-right: none;
+}
+
+.table-tab.active {
+    background-color: #102c72;
+}
+
+/* CONTENU DES PANNEAUX */
+.tab-panel-content {
+    background-color: rgb(244, 246, 246);
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+}
+
+/* POPUP DE CONFIRMATION */
+.popup-overlay11 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-content11 {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #15355c;
+}
+
+.popup-buttons11 {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.popup-buttons11 button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-buttons11 button:first-child {
+    background-color: #0aab2d;
+    color: white;
+    padding: 6px 40px;
+}
+
+.popup-buttons11 button:last-child {
+    background-color: #ccc;
+    padding: 6px 25px;
+}
+
+/* LISTE UTILISATEURS - Modifications */
+.utilisateur-entete {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    border-bottom: 3px solid#0B3164;
+
+    /* Même couleur que les autres séparateurs */
+    padding: 4px 0;
+    color: #3852a7e6;
+    bottom: 10px;
+    position: relative;
+    /* Supprimer la marge en bas */
+    align-items: center;
+
+    justify-content: space-between;
+    font-weight: bold;
+
+    /* Ligne plus épaisse */
+    padding-bottom: 0px;
+    margin-right: 22px;
+    margin-bottom: -10px;
+    text-align: center;
+}
+
+.utilisateur-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* Supprimer la marge */
+    min-height: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.utilisateur-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    /* Garder le même padding partout */
+    border-bottom: 1px solid #0B3164;
+    width: 100%;
+    /* Changer de 110% à 100% */
+    color: #141e46;
+    margin: 0;
+    /* Supprimer les marges */
+}
+
+/* Pour la dernière ligne */
+.utilisateur-list li:last-child .utilisateur-item {
+    border-bottom: none;
+    padding-bottom: 10px;
+    /* Garder le même padding que les autres */
+}
+
+/* Pour les spans */
+.utilisateur-item span,
+.utilisateur-entete span {
+    width: 25%;
+    text-align: center;
+    padding: 8px 4px;
+    /* Espacement régulier */
+    box-sizing: border-box;
+    /* Inclure padding dans la largeur */
+}
+
+.utilisateur-item span:last-child,
+.utilisateur-entete span:last-child {
+    width: 20%;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Pour l'email */
+.email-span {
+    width: 35%;
+    padding: 8px 4px;
+    /* Même padding que les autres */
+}

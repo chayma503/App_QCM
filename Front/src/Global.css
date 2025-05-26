@@ -1,0 +1,162 @@
+/* Supprimer le fond gris des champs auto-remplis */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  background-color: transparent !important;
+
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill {
+  color: rgb(48, 47, 47) !important;
+  -webkit-text-fill-color: rgb(47, 47, 47) !important;
+  /* Applique la couleur au texte auto-rempli */
+}
+
+
+
+body {
+  background-image: url('/images/back.png');
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.white-box {
+  position: relative;
+  background-color: white;
+  padding: 351px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 750px;
+  max-width: 100%;
+
+}
+
+.navigation-button {
+  position: absolute;
+  font-family: 'Rammetto One', sans-serif;
+  bottom: 10px;
+  right: 10px;
+  padding: 7px 28px;
+  font-size: 25px;
+  background-color: #19437A;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+
+}
+
+.sidebar-image {
+  position: fixed;
+  bottom: 0;
+  left: -9px;
+  width: 130px;
+  /* taille de l'image */
+  z-index: 0;
+  /* s’assurer qu'elle est en arrière-plan */
+  pointer-events: none;
+  /* pour ne pas gêner les clics */
+}
+
+.account-icon {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 35px;
+  color: #5e6973;
+  cursor: pointer;
+  z-index: 10;
+}
+
+
+.account-icon:hover {
+  color: #0056b3;
+}
+
+
+.account-info {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: rgba(138, 161, 185, 0.955);
+  border: 1px solid rgba(138, 161, 185, 0.955);
+  border-radius: 20px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 9;
+}
+
+.account-info p {
+  margin: 10px 0;
+  font-size: 16px;
+  text-align: left;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.account-info button {
+  margin-top: 10px;
+  padding: 9px;
+  width: 100%;
+  background-color: #97999b;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.account-info button:hover {
+  background-color: #0056b3;
+}
+
+.account-button {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  padding-left: 40px;
+  position: relative;
+}
+
+.account-icon-btn {
+  position: absolute;
+  left: 15px;
+  font-size: 20px;
+}
+
+.account-button .button-textt {
+  margin: 0 auto;
+  text-align: start;
+  margin-left: 40px;
+  size: 9px;
+}
+
+.account-initial-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #38546f;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.account-initial-circle:hover {
+  background-color: #7291b0;
+}
